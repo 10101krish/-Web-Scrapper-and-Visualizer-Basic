@@ -1,0 +1,10 @@
+            def clickedo():
+                cont = ef.get()
+                y = (datafile.loc[datafile['Name'] == cont])
+                if y.empty == False:
+                    print(y)
+                    df = pd.concat(xyz.append(y))
+                    df.to_csv("Modified_pop.csv", index=False)
+                else:
+                    print("Wrong Country Input, Entry Rejected !")
+                return
